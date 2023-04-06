@@ -1,6 +1,112 @@
 .App {
+
+  border-radius: 4px;
+  border: 1px solid black;
   text-align: center;
+  flex-wrap: wrap;
+  margin: 100px;
+  width: 250px;
+  height: 250px;
+  background: rgb(21, 18, 79);
+  flex-direction: row;
+  
 }
+
+.Div {
+  margin: 0 auto;
+}
+
+.cardContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+height: 600px;
+width: 500px;
+border: 1 px solid black;
+border-radius: 4px;
+background: gray;
+}
+
+/* Estilos base */
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+   flex-wrap: wrap;
+}
+
+.card-group {
+  margin-top: 20px;
+}
+
+.card-inner-group {
+  display: flex;
+ 
+}
+
+.card-inner-group .card {
+  flex-basis: calc(50% - 10px);
+  margin-right: 20px;
+}
+
+.card-inner-group .card:last-child {
+  margin-right: 0;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 1000px) {
+  .card-inner-group {
+    display: flex;
+    flex-wrap: wrap;
+
+   
+  }
+  .card-inner-group .card {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .card {
+    border: 1px solid #890000;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .App-logo {
   height: 40vmin;
@@ -14,7 +120,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #f0f4ff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
